@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestNGListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testcases.DashboardPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.DashboardPageTests -->
+      <class name="testcases.MyInfoTests">
+        <methods>
+          <include name="verifyDeleteAllContacts"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.MyInfoTests -->
+      <class name="testcases.TestNgListenersTests">
+        <methods>
+          <include name="testCaseTwo"/>
+          <include name="testCaseThree"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.TestNgListenersTests -->
+      <class name="testcases.DataDrivenLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginUsingDataDrivenApproach" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testcases.DataDrivenLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
